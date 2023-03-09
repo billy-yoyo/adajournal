@@ -1,0 +1,229 @@
+body {
+  font-family: Gordita, Roboto, Oxygen, Ubuntu, Cantarell,
+  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  width: 25%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background: #f3f4f6;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+p[role=alert] {
+  margin: 0 0 0.3rem 0;
+  color: #f87171;
+  flex-basis: 100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.input-container label {
+  margin-bottom: 3px;
+}
+
+.input-container input {
+  border-width: 0;
+  border-bottom: 3px solid #99f;
+  border-radius: 0;
+  padding: 0.4rem;
+  flex-basis: 100%;
+  align-self: stretch;
+}
+
+.input-container input:focus-visible {
+  border-width: 0;
+  border-bottom: 3px solid #44c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  margin-top: 10px;
+  background: #55c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.7rem 0.2rem;
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+button:hover {
+  background: #66d;
+  cursor: pointer;
+}
+
+button:focus {
+  background: #77e;
+}
+
+.icon-button {
+  margin-top: 0;
+  background: none;
+  width: unset;
+  height: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  --fill: #55c;
+}
+
+.icon-button:hover {
+  --fill: #fff;
+}
+
+.section {
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-left: 5px solid #99f;
+  background-color: #fff;
+  width: 100%;
+}
+
+.link:hover {
+  background-color: #ccf;
+}
+
+.link:focus {
+  background-color: #99f;
+}
+
+.link h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+p.date {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 0.75rem;
+  font-weight: normal;
+  color: #333;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.empty-space {
+  flex-grow: 1;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.create-question {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.question-input {
+  border-width: 0;
+  border-bottom: 3px solid #99f;
+  border-radius: 0;
+  padding: 0.4rem;
+  flex-basis: 100%;
+  align-self: stretch;
+}
+
+.scale {
+  border-bottom: none;
+}
+
+.scale input {
+  display: none;
+}
+
+.scale label {
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 5px;
+  background: none;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  border: 2px solid #55c;
+  color: #55c;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.scale label:hover {
+  background: #66d;
+  color: white;
+}
+
+.scale input:checked + label {
+  background-color: #55c;
+  color: white;
+}
+
+.scale:last-of-type[label] {
+  margin-right: 0;
+}
